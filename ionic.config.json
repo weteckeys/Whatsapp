@@ -1,0 +1,7 @@
+{
+  "name": "wp_clone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

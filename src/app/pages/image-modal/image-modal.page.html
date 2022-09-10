@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="main_content_div">
+      <div class="back_image bg_image" [style.backgroundImage]="'url( '+ image +' )'"></div>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="3" (click)="goToChat()">
+            <ion-icon name="chatbox-ellipses"></ion-icon>
+          </ion-col>
+          <ion-col size="3">
+            <ion-icon name="call"></ion-icon>
+          </ion-col>
+          <ion-col size="3">
+            <ion-icon name="videocam"></ion-icon>
+          </ion-col>
+          <ion-col size="3" (click)="goToPersonDetail()">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+</ion-content>

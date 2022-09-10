@@ -1,0 +1,45 @@
+.main_content_div{
+    width: 100%;
+
+    ion-label {
+        display: block;
+    }
+
+    .green_lbl{
+        color: var(--ion-color-main);
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .upper_div{
+        padding: 16px;
+        border-bottom: 1px solid lightgray;
+        
+       
+        .flex_div{
+            display: flex;
+            align-items: center;
+    
+            ion-label {
+                width: 90%;
+            }
+            ion-icon{
+                font-size: 22px;
+                color: gray;
+            }
+        }
+    }
+
+    .list_div{
+        padding: 16px;
+
+        ion-radio{
+            --color-checked : var(--ion-color-main);
+        }
+
+        ion-item{
+            --padding-start: 0px;
+        }
+    }
+}

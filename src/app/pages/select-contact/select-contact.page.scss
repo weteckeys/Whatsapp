@@ -1,0 +1,57 @@
+.small_title{
+    color: white;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.main_content_div{
+    width: 100%;
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+    .list_div{
+        display: flex;
+        align-items: center;
+        .user_image{
+            height: 45px;
+            width: 45px;
+            border-radius: 100%;
+            background-position: top;
+            min-width: 45px;
+            min-height: 45px;
+        }
+
+        .detail{
+            padding-left: 15px;
+            width: 100%;
+            padding: 12px;
+            position: relative;
+            .username{
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            .light {
+                color: gray;
+                font-size: 14px;
+            }
+            .vcall{
+                position: absolute;
+                margin: 0;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--ion-color-main);
+            }
+            .call{
+                position: absolute;
+                margin: 0;
+                right: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--ion-color-main);
+            }
+        }
+    }
+}

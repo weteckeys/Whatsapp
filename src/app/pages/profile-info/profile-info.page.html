@@ -1,0 +1,30 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Profile Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <ion-label class="simple_lbl">Please Provide your name and an optional profile photo</ion-label>
+
+    <div class="camera_div">
+      <img src="assets/imgs/camera.png" alt="">
+    </div>
+
+    <div class="flex_div">
+      <ion-input type="text" placeholder="Username" value="John Doe"></ion-input>
+      <ion-icon name="happy-outline"></ion-icon>
+    </div>
+
+
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="btn_div">
+    <ion-button (click)="goToHome()">
+      Next
+    </ion-button>
+  </div>
+</ion-footer>

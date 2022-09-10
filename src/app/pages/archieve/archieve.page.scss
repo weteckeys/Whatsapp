@@ -1,0 +1,71 @@
+.main_content_div{
+    width: 100%;
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+    .list_div{
+        display: flex;
+        align-items: center;
+        .user_image{
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            background-position: top;
+            min-width: 50px;
+            min-height: 50px;
+        }
+
+        .detail{
+            padding-left: 15px;
+            width: 100%;
+            padding: 12px;
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 5px;
+            position: relative;
+            .username{
+                font-weight: 600;
+                // font-size: 15px;
+                margin-bottom: 5px;
+            }
+
+            span{
+                display: flex;
+
+                ion-icon{
+                    font-size: 18px;
+                    margin-right: 10px;
+                    color: gray;
+                }
+
+                .active{
+                    color: #33B7F1;
+                }
+                .light {
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+            .time{
+                color: gray;
+                font-size: 13px;
+                position: absolute;
+                top: 16px;
+                right: 0;
+            }
+
+            .archive{
+                position: absolute;
+                right: 0;
+                color: gray;
+                font-size: 13px;
+                border: 1px solid lightgray;
+                border-radius: 3px;
+                padding: 0px 5px;
+                bottom: 8px;
+            }
+        }
+    }
+}

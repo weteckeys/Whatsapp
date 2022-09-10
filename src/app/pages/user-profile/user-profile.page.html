@@ -1,0 +1,58 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="user_div bg_image" [style.backgroundImage]="'url(assets/imgs/users/user1.jpg)'">
+      <div class="camera_div">
+        <ion-icon name="camera"></ion-icon>
+      </div>
+    </div>
+
+    <div class="detail_div">
+
+      <div class="flex_div">
+        <ion-icon class="abs" name="pencil-sharp" (click)="presentModal('name')"></ion-icon>
+        <div>
+          <ion-icon class="left_icn" name="person-sharp"></ion-icon>
+        </div>
+        <div class="detail_div">
+          <ion-label class="small_lbl">Name</ion-label>
+          <ion-label class="simple_lbl">John</ion-label>
+          <ion-label class="small_lbl">This is not your username or pin. This name will be visible to your WhatsApp
+            Contacts.</ion-label>
+        </div>
+      </div>
+
+      <div class="flex_div">
+        <ion-icon class="abs" name="pencil-sharp" (click)="goToAbout()"></ion-icon>
+        <div>
+          <ion-icon class="left_icn" name="alert-circle-outline"></ion-icon>
+        </div>
+        <div class="detail_div">
+          <ion-label class="small_lbl">About</ion-label>
+          <ion-label class="simple_lbl">John</ion-label>
+        </div>
+      </div>
+
+      <div class="flex_div">
+        <div>
+          <ion-icon class="left_icn" name="call"></ion-icon>
+        </div>
+        <div class="detail_div">
+          <ion-label class="small_lbl">Phone</ion-label>
+          <ion-label class="simple_lbl">+91 9876543212</ion-label>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</ion-content>

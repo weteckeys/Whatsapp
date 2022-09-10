@@ -1,0 +1,31 @@
+.main_content_div{
+    width: 100%;
+    // padding: 16px;
+
+    .green_lbl{
+        color: var(--ion-color-main);
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 15px;
+        display: block;
+    }
+
+    .simple_lbl{
+        font-size: 13px;
+        color: gray;
+        margin-bottom: 15px;
+        display: block;
+    }
+    
+    .lock{
+        font-size: 22px;
+        color: rgba(7, 93, 84, 0.7);
+    }
+
+    .list_div2{
+        padding: 16px;
+        ion-item{
+            --padding-start: 8px;
+        }
+    }
+}

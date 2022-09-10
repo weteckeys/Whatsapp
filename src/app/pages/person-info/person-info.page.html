@@ -1,0 +1,96 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{name}}</ion-title>
+    <ion-button slot="end" fill="clear" size="small">
+      <ion-icon name="ellipsis-vertical"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="media">
+      <div class="flex_div">
+        <ion-label class="green_lbl">Media, Links and docs</ion-label>
+        <ion-label class="number_lbl"><span>18</span>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-label>
+      </div>
+
+      <div class="chips_div">
+        <div *ngFor="let item of images; let i = index">
+          <div class="back_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list_div">
+
+      <ion-item>
+        <ion-label>Mute Notifications</ion-label>
+        <ion-toggle mode="md" slot="end"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Custom Notifications</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Media Visibility</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon slot="end" class="lock" name="lock-closed"></ion-icon>
+
+        <ion-label>
+          <ion-text>
+            <ion-label>Encryption</ion-label>
+          </ion-text>
+          <p style="white-space: pre-wrap;">Messages to this chat and calls are secured with end-to-end encryption. Tap
+            to verify.</p>
+        </ion-label>
+      </ion-item>
+
+    </div>
+
+    <div class="list_div">
+      <ion-item>
+        <ion-icon slot="end" class="lock" name="lock-closed"></ion-icon>
+
+        <ion-label>
+          <ion-text>
+            <ion-label>Urgent calls only, text bofore call</ion-label>
+          </ion-text>
+          <p style="white-space: pre-wrap;">9 March</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label style="margin-top: 15px;margin-bottom: 15px;">+91 9876543212</ion-label>
+        <ion-icon class="small_icn" name="chatbox-ellipses" slot="end"></ion-icon>
+        <ion-icon class="small_icn" name="call" slot="end"></ion-icon>
+        <ion-icon class="small_icn" name="videocam" slot="end"></ion-icon>
+      </ion-item>
+    </div>
+
+    <div class="list_div">
+      <ion-item lines="none">
+        <ion-label class="red_lbl">Block</ion-label>
+        <img slot="start" class="red_img" src="assets/imgs/block.png">
+      </ion-item>
+    </div>
+
+    <div class="list_div">
+      <ion-item lines="none">
+        <ion-icon slot="start" class="thumb" name="thumbs-down-sharp"></ion-icon>
+        <ion-label class="red_lbl">Report Contact</ion-label>
+      </ion-item>
+    </div>
+
+
+  </div>
+</ion-content>

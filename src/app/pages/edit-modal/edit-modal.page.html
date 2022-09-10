@@ -1,0 +1,43 @@
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>edit-modal</ion-title>
+  </ion-toolbar> 
+</ion-header> -->
+
+<ion-content>
+  <div class="main_content_modal">
+
+    <span *ngIf="val == 'name'">
+      <ion-label class="bold_lbl">Enter your name</ion-label>
+      <div class="flex_div">
+        <ion-input type="text" placeholder="Username" value="John Doe"></ion-input>
+        <ion-icon name="happy-outline"></ion-icon>
+      </div>
+      <div class="btn_div">
+        <ion-button (click)="close()" fill="clear" size="small">
+          CANCEL
+        </ion-button>
+        <ion-button (click)="close()" fill="clear" size="small">
+          SAVE
+        </ion-button>
+      </div>
+    </span>
+
+    <span *ngIf="val == 'about'">
+      <ion-label class="bold_lbl">Add About</ion-label>
+      <div class="flex_div">
+        <ion-input type="text" value="Be nice for no reason.."></ion-input>
+        <ion-icon name="happy-outline"></ion-icon>
+      </div>
+      <div class="btn_div">
+        <ion-button (click)="close()" fill="clear" size="small">
+          CANCEL
+        </ion-button>
+        <ion-button (click)="close()" fill="clear" size="small">
+          SAVE
+        </ion-button>
+      </div>
+    </span>
+
+  </div>
+</ion-content>

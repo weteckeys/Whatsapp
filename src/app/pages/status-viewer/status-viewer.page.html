@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="status_flex">
+      <div class="progress"></div>
+      <div class="progress"></div>
+      <div class="progress"></div>
+      <div class="progress"></div>
+      <div class="progress"></div>
+    </div>
+
+    <div class="user_div">
+      <ion-icon class="back" name="arrow-back" (click)="goBack()"></ion-icon>
+      <div class="user_back bg_image" [style.backgroundImage]="'url(assets/imgs/users/user1.jpg)'"></div>
+
+      <div class="user_detail">
+        <ion-label class="username">John</ion-label>
+        <ion-label class="time">Today, 3:00 pm</ion-label>
+      </div>
+
+      <ion-button (click)="presentPopover($event)" fill="clear" size="small">
+        <ion-icon name="ellipsis-vertical" color="light"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="container">
+      <div class="progress">
+        <div class="progress-bar" data-complete="0">0%</div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

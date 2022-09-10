@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>About</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="upper_div">
+      <ion-label class="green_lbl">Currenty set to</ion-label>
+
+      <div class="flex_div">
+        <ion-label>Be nice for no reason..</ion-label>
+        <ion-icon name="pencil-sharp" (click)="presentModal('about')"></ion-icon>
+      </div>
+    </div>
+
+    <div class="list_div">
+      <ion-label class="green_lbl">Select About</ion-label>
+
+      <ion-list lines="none">
+        <ion-radio-group name="about">
+
+          <ion-item *ngFor="let item of list">
+            <ion-label>{{item}}</ion-label>
+            <ion-radio value="{{item}}"></ion-radio>
+          </ion-item>
+
+        </ion-radio-group>
+      </ion-list>
+
+    </div>
+
+  </div>
+</ion-content>

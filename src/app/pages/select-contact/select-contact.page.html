@@ -1,0 +1,78 @@
+<ion-header mode="md">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Select Contact</ion-title>
+    <ion-label class="small_title">200 Contacts</ion-label>
+    <ion-button fill="clear" slot="end" size="small">
+      <ion-icon name="search"></ion-icon>
+    </ion-button>
+    
+    <ion-button fill="clear" slot="end" size="small">
+      <ion-icon name="ellipsis-vertical"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <span *ngIf="id == 'Call'">
+      <div class="list_div" *ngFor="let item of userList">
+        <div class="user_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+        <div class="detail">
+          <ion-label class="username">{{item.name}}</ion-label>
+          <ion-label class="light">Hellooo</ion-label>
+  
+          <ion-button size="small" class="vcall" fill="clear">
+            <ion-icon name="videocam"></ion-icon>
+          </ion-button>
+  
+          <ion-button size="small" class="call" fill="clear">
+            <ion-icon name="call"></ion-icon>
+          </ion-button>
+  
+        </div>
+      </div>
+  
+      <div class="list_div" *ngFor="let item of userList">
+        <div class="user_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+        <div class="detail">
+          <ion-label class="username">{{item.name}}</ion-label>
+          <ion-label class="light">Hellooo</ion-label>
+  
+          <ion-button size="small" class="vcall" fill="clear">
+            <ion-icon name="videocam"></ion-icon>
+          </ion-button>
+  
+          <ion-button size="small" class="call" fill="clear">
+            <ion-icon name="call"></ion-icon>
+          </ion-button>
+  
+        </div>
+      </div>
+    </span>
+
+    <span *ngIf="id != 'Call'">
+      <div class="list_div" *ngFor="let item of userList" (click)="goToChat(item)">
+        <div class="user_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+        <div class="detail">
+          <ion-label class="username">{{item.name}}</ion-label>
+          <ion-label class="light">Hellooo</ion-label>
+        </div>
+      </div>
+  
+      <div class="list_div" *ngFor="let item of userList"  (click)="goToChat(item)">
+        <div class="user_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+        <div class="detail">
+          <ion-label class="username">{{item.name}}</ion-label>
+          <ion-label class="light">Hellooo</ion-label>
+        </div>
+      </div>
+    </span>
+
+   
+    
+  </div>
+</ion-content>

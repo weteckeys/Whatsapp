@@ -1,0 +1,172 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notifications</ion-title>
+    <ion-button (click)="presentPopover($event)" size="small" fill="clear" slot="end">
+      <ion-icon name="ellipsis-vertical-sharp" color="light"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="list_div2" style="border-bottom: 1px solid lightgray;">
+
+      <ion-item lines="none">
+        <ion-toggle mode="md" slot="end"></ion-toggle>
+        <ion-label>
+          <ion-text>
+            <ion-label>Conversation tones </ion-label>
+          </ion-text>
+          <p style="white-space: pre-wrap;">Play sounds for incoming and outgoimg messages</p>
+        </ion-label>
+      </ion-item>
+
+
+    </div>
+
+    <div class="list_div2" style="border-bottom: 1px solid lightgray;">
+
+      <ion-label class="green_lbl">Messages</ion-label>
+
+      <ion-list lines="none">
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Notification Tone</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Default(Skyline)</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Vibrate</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Default</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Popup Notification</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">No Popup</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Light</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">White</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-toggle mode="md" slot="end"></ion-toggle>
+          <ion-label>
+            <ion-text>
+              <ion-label>Use high prioriry notification</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Show Previous of notifications at the top of ths screen</p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+    </div>
+
+    <div class="list_div2" style="border-bottom: 1px solid lightgray;">
+
+      <ion-label class="green_lbl">Groups</ion-label>
+
+      <ion-list lines="none">
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Notification Tone</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Default(Skyline)</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Vibrate</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Default</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Popup Notification</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">No Popup</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Light</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">White</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-toggle mode="md" slot="end"></ion-toggle>
+          <ion-label>
+            <ion-text>
+              <ion-label>Use high prioriry notification</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Show Previous of notifications at the top of ths screen</p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+    </div>
+
+    <div class="list_div2" style="border-bottom: 1px solid lightgray;">
+
+      <ion-label class="green_lbl">Calls</ion-label>
+
+      <ion-list lines="none">
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Ringtone</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Silent</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Vibrate</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Default</p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+    </div>
+
+  </div>
+</ion-content>

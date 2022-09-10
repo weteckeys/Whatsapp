@@ -1,0 +1,65 @@
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>status</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="camera_div">
+      <ion-icon name="camera"></ion-icon>
+    </div>
+
+    <div class="pencil_div">
+      <ion-icon name="pencil-sharp"></ion-icon>
+    </div>
+
+
+
+    <div class="list_div">
+      <div class="user_image bg_image" [style.backgroundImage]="'url(assets/imgs/users/user2.jpg)'">
+        <img src="assets/imgs/add.png" alt="">
+      </div>
+      <div class="detail">
+        <ion-label class="username">My Status</ion-label>
+        <span>
+          <ion-label class="light">Tap to add status update</ion-label>
+        </span>
+      </div>
+    </div>
+
+    <div class="gray_div">
+      <ion-label>Recent Updates</ion-label>
+    </div>
+
+    <div class="lower_div">
+      <div class="list_div2" *ngFor="let item of (userList | slice : 0: 4)" (click)="goToViewer()">
+        <div class="user_image2 bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+        <div class="detail2">
+          <ion-label class="username">{{item.name}}</ion-label>
+          <span>
+            <ion-label class="light">Hellooo</ion-label>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gray_div">
+      <ion-label>Viewed Updates</ion-label>
+    </div>
+
+    <div class="lower_div">
+      <div class="list_div2" *ngFor="let item of (userList | slice : 5 )">
+        <div class="user_image2 bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+        <div class="detail2">
+          <ion-label class="username">{{item.name}}</ion-label>
+          <span>
+            <ion-label class="light">Hellooo</ion-label>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

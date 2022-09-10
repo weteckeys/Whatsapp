@@ -1,0 +1,93 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Chats</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="list_div2" style="border-bottom: 1px solid lightgray;">
+      <ion-list lines="none">
+
+        <ion-item>
+          <ion-icon slot="start" class="lock" name="sunny"></ion-icon>
+          <ion-label>
+            <ion-text>
+              <ion-label>Theme</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Light</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon slot="start" class="lock" name="key"></ion-icon>
+          <ion-label>Wallpaper</ion-label>
+        </ion-item>
+
+      </ion-list>
+    </div>
+
+    <div class="list_div2" style="border-bottom: 1px solid lightgray;">
+
+      <ion-label class="green_lbl">Chat Settings</ion-label>
+
+      <ion-list lines="none">
+
+        <ion-item>
+          <ion-toggle slot="end" mode="md"></ion-toggle>
+          <ion-label>
+            <ion-text>
+              <ion-label>Enter is send</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Enter ket will send you message</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-toggle slot="end" mode="md"></ion-toggle>
+          <ion-label>
+            <ion-text>
+              <ion-label>Media vidibility</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Show newly downloaded media in your phone's gallery</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>Font Size</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Medium</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <ion-text>
+              <ion-label>App Language</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Phone's language (English)</p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+    </div>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" class="lock" name="cloud-upload"></ion-icon>
+      <ion-label>Chat Backup</ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" class="lock" name="time-outline"></ion-icon>
+      <ion-label>Chat history</ion-label>
+    </ion-item>
+
+  </div>
+</ion-content>

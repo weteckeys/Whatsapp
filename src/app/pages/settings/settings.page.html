@@ -1,0 +1,91 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="list_div" (click)="goToprofile()">
+      <div class="user_image bg_image" [style.backgroundImage]="'url(assets/imgs/users/user2.jpg)'"></div>
+      <div class="detail">
+        <ion-label class="username">John</ion-label>
+        <span>
+          <ion-label class="light">Be nice for no reason</ion-label>
+        </span>
+      </div>
+    </div>
+
+    <div class="list_div2">
+
+      <ion-list lines="none">
+        <ion-item (click)="goToAccount()">
+          <ion-icon slot="start" class="lock" name="key"></ion-icon>
+          <ion-label>
+            <ion-text>
+              <ion-label>Account</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Privacy, security, Change number</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item (click)="goToChatSettings()">
+          <ion-icon slot="start" class="lock" name="chatbox-ellipses"></ion-icon>
+          <ion-label>
+            <ion-text>
+              <ion-label>Chats</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Theme, wallpaper, chat history</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item (click)="goToNotification()">
+          <ion-icon slot="start" class="lock" name="notifications"></ion-icon>
+          <ion-label>
+            <ion-text>
+              <ion-label>Notifications</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Message, group & call tones</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item (click)="goToStorage()">
+          <ion-icon slot="start" class="lock" name="sync-circle-outline"></ion-icon>
+          <ion-label>
+            <ion-text>
+              <ion-label>Data and storage usage</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">Network usage, auto-download</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="inset" (click)="goToHelp()">
+          <ion-icon slot="start" class="lock" name="help-circle-outline"></ion-icon>
+          <ion-label>
+            <ion-text>
+              <ion-label>Help</ion-label>
+            </ion-text>
+            <p style="white-space: pre-wrap;">FAQ, contact us, privacy policy</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+
+      <ion-item lines="none">
+        <ion-icon slot="start" class="lock" name="people-sharp"></ion-icon>
+        <ion-label style="margin-top: 20px;margin-bottom: 20px;">
+          Invite Friends
+        </ion-label>
+      </ion-item>
+
+    </div>
+
+    <ion-label class="light_lbl">From</ion-label>
+    <ion-label class="fb_lbl">FACEBOOK</ion-label>
+
+  </div>
+</ion-content>

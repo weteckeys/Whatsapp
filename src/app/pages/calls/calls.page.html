@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="camera_div" (click)="goToCallsContact()">
+     <img src="assets/imgs/call2.png">
+    </div>
+
+    <div class="list_div" *ngFor="let item of userList">
+      <div class="user_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'" (click)="presentModal(item)"></div>
+      <div class="detail">
+        <ion-label class="username">{{item.name}}</ion-label>
+        <span>
+          <img src="assets/imgs/attend.png" *ngIf="item.callStatus == 1">
+          <img src="assets/imgs/decline.png" *ngIf="item.callStatus == 0">
+          <ion-label class="light">{{item.callTime}}</ion-label>
+        </span>
+        <ion-icon class="call" name="call" *ngIf="item.callType == 'call'"></ion-icon>
+        <ion-icon name="videocam" class="call" *ngIf="item.callType == 'video'"></ion-icon>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

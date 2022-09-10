@@ -1,0 +1,14 @@
+.main_content_div{
+    width: 100%;
+    padding: 16px;
+
+    ion-item{
+        --padding-start: 0px;
+        height: 50px;
+
+        ion-icon{
+            font-size: 22px;
+            color: rgba(7, 93, 84, 0.7);
+        }
+    }
+}

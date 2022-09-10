@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <ion-label class="green_lbl">Enter your phone number</ion-label>
+
+    <ion-label class="simple_lbl">WhatsApp will send an SMS message to verify your phone number. <span>What's my number
+        ?</span></ion-label>
+
+    <ion-label class="borders" (click)="openCountry()"> {{cname}} </ion-label>
+
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="3">
+          <ion-input type="text" [(ngModel)]="ccCode" disabled="true"></ion-input>
+        </ion-col>
+        <ion-col size="9">
+          <ion-input type="text" placeholder="Mobile Number"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-label class="light_lbl">Carrier SMS charges may apply</ion-label>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="btn_div">
+    <ion-button (click)="goToVerify()">
+      Next
+    </ion-button>
+  </div>
+</ion-footer>

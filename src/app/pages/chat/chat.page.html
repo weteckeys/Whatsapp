@@ -1,0 +1,71 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="header_div">
+
+      <div class="first_div">
+        <ion-buttons slot="start">
+          <ion-back-button mode="md" color="light"></ion-back-button>
+        </ion-buttons>
+        <div class="back_image bg_image" [style.backgroundImage]="'url('+ image +')'" (click)="goToPersonDetail()">
+        </div>
+        <ion-label class="username" (click)="goToPersonDetail()">{{name}}</ion-label>
+      </div>
+
+      <div class="sec_div">
+
+        <ion-button size="small" fill="clear">
+          <ion-icon name="videocam"></ion-icon>
+        </ion-button>
+
+        <ion-button size="small" fill="clear">
+          <ion-icon name="call-sharp"></ion-icon>
+        </ion-button>
+
+        <ion-button size="small" fill="clear" (click)="presentPopover($event)">
+          <ion-icon name="ellipsis-vertical"></ion-icon>
+        </ion-button>
+
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <span *ngFor="let item of msgs">
+      <div class="left_div" *ngIf="item.side == 'left'">
+        <div class="inner_div">
+
+          <div class="msg_div">
+            <ion-label>{{item.msg}}</ion-label>
+            <div class="tri_left"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right_div" *ngIf="item.side == 'right'">
+        <div class="inner_div">
+          <div class="msg_div">
+            <ion-label>{{item.msg}}</ion-label>
+            <div class="tri_right"></div>
+          </div>
+        </div>
+      </div>
+    </span>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer_div">
+    <ion-input type="text" placeholder="Type a message..">
+      <ion-icon name="happy-outline" class="smile"></ion-icon>
+      <ion-icon name="attach" class="pin"></ion-icon>
+      <ion-icon name="camera" class="camera"></ion-icon>
+    </ion-input>
+    <div class="chat_div">
+      <ion-icon name="mic"></ion-icon>
+    </div>
+  </div>
+</ion-footer>

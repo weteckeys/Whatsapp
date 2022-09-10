@@ -1,0 +1,42 @@
+<ion-header mode="md">
+  <ion-toolbar>
+    <ion-title>WhatsApp</ion-title>
+
+    <ion-button fill="clear" slot="end" size="small">
+      <ion-icon name="search"></ion-icon>
+    </ion-button>
+    
+    <ion-button (click)="presentPopover($event)" fill="clear" slot="end" size="small">
+      <ion-icon name="ellipsis-vertical"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="padding" >  
+  <ion-tabs (ionTabsWillChange)="tabChange($event)">
+
+    <ion-tab-bar slot="top">
+
+      <div class="first_div">
+        <ion-tab-button tab="camera">  
+          <ion-icon name="camera"></ion-icon>
+        </ion-tab-button>
+      </div>
+      <div class="sec_div">
+        <ion-tab-button tab="home" [class.active_tab]="tabId == 'home'">  
+          <ion-label [class.active]="tabId == 'home'">CHATS</ion-label>  
+        </ion-tab-button>  
+          
+        <ion-tab-button tab="status" [class.active_tab]="tabId == 'status'">  
+          <ion-label [class.active]="tabId == 'status'">STATUS</ion-label>  
+        </ion-tab-button>  
+          
+        <ion-tab-button tab="calls" [class.active_tab]="tabId == 'calls'">  
+          <ion-label [class.active]="tabId == 'calls'">CALLS</ion-label>  
+        </ion-tab-button>  
+      </div>
+    </ion-tab-bar>  
+
+  </ion-tabs>  
+</ion-content>
